@@ -11,7 +11,7 @@ function game() {
     while (true) {
         count = count + 1
         //Count from 0 increase by 1 until the user guesses the number of computer
-        
+
         let userAttempt = prompt('Enter your guess.')
         //Get the user's choice
         if (userAttempt == computerNumber) {
@@ -20,9 +20,12 @@ function game() {
             // newScore = userName + ',' + count
             scores.push(result)
             break;
-        } else {
+        } else if (userAttempt != 0 && userAttempt < 21) {
             alert('Nope!')
+        } else {
+            alert('Sorry, it is not avairable. Try again.')
         }
+        //If the entered value is a number between 1 and 20 and is not equal to the computer number, it will display "nope!", and if any other number or word is entered, it will display "Sorry, it is not avairable. Try again"
     }
 
 }
