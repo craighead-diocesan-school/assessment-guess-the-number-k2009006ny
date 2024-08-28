@@ -10,8 +10,10 @@ function game() {
     let count = 0
     while (true) {
         count = count + 1
-
+        //Count from 0 increase by 1 until the user guesses the number of computer
+        
         let userAttempt = prompt('Enter your guess.')
+        //Get the user's choice
         if (userAttempt == computerNumber) {
             alert('Well done!')
             let result = (userName + ',' + count)
@@ -26,7 +28,9 @@ function game() {
 }
 
 let scores = []
+//The username and count inputs from the previous function are entered within [] (which means array)
 
 function result() {
-    alert(scores)
+    alert('Scoreboard;' + scores)
+    //display the word scoreboard; and the names and counts entered in the array
 }
