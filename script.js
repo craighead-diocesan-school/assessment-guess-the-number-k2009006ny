@@ -34,6 +34,6 @@ let scores = []
 //The username and count inputs from the previous function are entered within [] (which means array)
 
 function result() {
-    alert('Scoreboard;' + scores)
+    alert('Scoreboard; ' + scores)
     //display the word scoreboard; and the names and counts entered in the array
 }
